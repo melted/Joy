@@ -6,7 +6,7 @@
 #ifndef LOCALTIME_C
 #define LOCALTIME_C
 
-#ifdef _MSC_VER
+#ifdef WIN32
 void localtime_r(time_t *t, struct tm *tm)
 {
     *tm = *localtime(t);

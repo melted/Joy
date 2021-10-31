@@ -6,7 +6,7 @@
 #ifndef GMTIME_C
 #define GMTIME_C
 
-#ifdef _MSC_VER
+#ifdef WIN32
 void gmtime_r(time_t *t, struct tm *tm)
 {
     *tm = *gmtime(t);
