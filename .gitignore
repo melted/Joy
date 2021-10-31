@@ -1,5 +1,6 @@
 dummy
 *.o
+.vscode
 demo*.txt
 test*.txt
 CMakeCache.txt
