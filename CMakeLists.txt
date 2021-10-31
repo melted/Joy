@@ -16,6 +16,7 @@ endif()
 add_executable(joy interp.c scan.c utils.c main.c srand.c rand.c factor.c gc.c)
 add_dependencies(joy always)
 add_custom_target(always
+		  WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
 		  COMMAND sh banner.sh ${PROJECT_NAME} ${PROJECT_VERSION}
 		  COMMAND sh table.sh
 		  COMMAND sh prims.sh
